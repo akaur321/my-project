@@ -1,0 +1,133 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100svh;
+    /* margin-bottom: 100vh; */
+    overflow: hidden;
+   }
+   .heroContent{
+    width: 40%;
+    margin-top: 0px;
+    padding: 20px;
+    gap: 10px;
+    height: 130%;
+    display: flex;
+    z-index: 50;
+    font-size: 2rem;
+    color: white;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+   }
+   .heroText{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    gap: 10px;
+   }
+   .heroText h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+
+   }
+   .heroText p{
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+   }
+   .herobackground{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    margin: 0%;
+    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+}
+.herobackgroundMobile{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin: 0%;
+    height: 100%;
+    object-fit: cover;
+}
+.herobackground img{
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+}
+ .container1 , .container2{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    margin: 0%;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.container1{
+    left: 0vw;
+}
+.container2{
+    right: 0vw;
+}
+.visibletop{
+    left: 0vw;
+}
+.visiblebottom{
+    right: -50vw;
+}
+@media screen and (max-width: 768px) {  
+    .hero{
+        height: 100vh;
+        margin-top: -28px;
+    }
+    .heroContent{
+        align-self: start;
+        position: absolute;
+        justify-content: flex-start;
+        margin-top: 100px;
+        width: 60%;
+    }
+    .heroText{
+        width: 100%;
+        margin-top: 100px;
+        padding: 20px 0px
+    }
+    .heroText h1{
+        font-size: 40px;
+        text-wrap: wrap;
+    }   
+    .heroText h5{
+        font-size: 26px;
+        text-wrap: wrap;
+    }
+    .heroText p{
+        width: 80%;
+        font-size: 1.2rem;
+        text-wrap: wrap;
+    }
+    .herobackground {
+        display: none;
+    }
+    .herobackgroundMobile{
+        display: flex;
+        width: 100vw;
+    }
+    .herobackgroundMobile img{
+        width: 100%;
+        object-fit: cover;
+    }
+}

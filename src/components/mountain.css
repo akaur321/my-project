@@ -1,0 +1,225 @@
+.mountainRest {
+    background: #041A27;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 80px; */
+    width: 100%;
+    padding: 30px 0;
+    padding-bottom: 0px ;
+    height: 110%;
+  }
+  .mountainPart1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    /* gap: 10px; */
+    height: 100%;
+  }
+  
+  .mountainItem1, .mountainItem2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+  }
+  
+  .mountainItem1 {
+
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 30px;
+  }
+  
+  .mountainItem1 h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+  }
+  
+  .mountainItem1 h4 {
+    margin: 30px 0;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+  }
+  
+  .mountainItem1 p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 70%;
+    text-wrap: wrap;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+  }
+  
+  .mountainItem1 hr {
+
+    width: 150px;
+    height: 10px;
+    background-color: rgb(65, 178, 223);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(7, 191, 204, 0.5);
+    transition: all 0.5s ease;
+  }
+  
+  .mountainItem1:hover h1 {
+    text-shadow: 2px 2px 10px rgba(144, 243, 243, 0.8);
+  }
+  
+  .mountainItem1:hover hr {
+    width: 250px;
+
+  }
+  
+  .mountainItem2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  
+  .mountainImage {
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 450px;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+  
+  .mountainPart2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .mountainItem3 {
+    margin-left: -220px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 10px;
+    gap: 20px;
+  }
+  
+  .mountainItem3 h4 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 20px 0;
+    font-weight: 500;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid rgb(65, 178, 223);
+  }
+  
+  .mountainItem3Div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    gap: 10px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+  }
+  
+  .mountainItem3Div p {
+    flex: 1;
+  }
+  
+  .mountainItem4 {
+    margin-top: -40px;
+    flex: 1;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgb(43, 190, 209);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mountainCard {
+      width: 80vw;
+    }
+    
+    .mountainItem1 h1 {
+      font-size: 2.2rem;
+      width: 100%;
+    }
+  
+    .mountainItem1 h4 {
+      font-size: 2rem;
+      width: 100%;
+    }
+  
+    .mountainItem1 p {
+      font-size: 1.5rem;
+      width: 94%;
+    }
+  
+    .mountainItem1 hr {
+      width: 250px;
+      height: 8px;
+    }
+  
+    .mountainItem2 {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .mountainImage {
+      width: 300px;
+    }
+  
+    .mountainPart2 {
+      flex-direction: column-reverse;
+    }
+  
+    .mountainItem3 {
+      width: 80vw;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  
+    .mountainItem3 h4 {
+      width: 90%;
+    }
+  
+    .mountainItem3Div {
+      width: 90%;
+    }
+  
+    .mountainItem4 {
+      margin-top: 0px;
+      font-size: 2rem;
+    }
+  }
+  

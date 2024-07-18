@@ -1,0 +1,88 @@
+.navCont{
+    width: 100vw;
+    overflow-y: hidden;
+}
+.navbar{
+    position: fixed;
+    width: 100vw;
+  /* padding: 15px; */
+  padding-bottom: 5px;
+  padding-left: 20px;
+    z-index: 400;
+    transition: all 0.6s ease;
+}
+.navbar .cont{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.scrolled{
+   backdrop-filter:  blur(20px);
+/* background-color: #add6dd; */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+.navBarLogo{
+flex: 1;
+}
+.navBarLogo img {
+height: 30px;
+}
+.navBarLinksContainer{
+flex: 2;
+margin-left: 70px;
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+}
+.navBarLinks {
+margin: 0 15px;
+margin-top: 20px;
+font-size: 20px;
+padding: 0 0 0.5em;
+margin: 0 0.95em;
+font-weight:600;
+color: #ffffff;
+position: relative;
+text-align: end;
+/* text-decoration: none; */
+}
+
+.navBarLinks::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 4px;
+border-radius: 4px;
+background-color: #89bcd8;
+box-shadow: #89bcd8 0 0 10px;
+bottom: 4px;
+left: 0;
+transform-origin: right;
+transform: scaleX(0);
+transition: transform .3s ease-in-out , color .3s ease-in-out;
+}
+.navBarLinks:hover{
+color: #89bcd8;
+}
+.navBarLinks:hover::before {
+transform-origin: left;
+transform: scaleX(1);
+}
+@media screen and (max-width: 768px) {
+    .navbar{
+        position: fixed;
+        background-color: rgba(255, 255, 255 , 0);
+    }
+    .navBarLinksContainer{
+        display: none;
+    }
+    .logo img{
+        /* margin-top: 50px; */
+        height: 50px;
+    }
+    .scrolled{
+        background-color: rgba(250, 254, 255 , 0 );
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)    
+    }
+}

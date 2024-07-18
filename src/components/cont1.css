@@ -1,0 +1,307 @@
+/* cont1.css */
+
+.cont1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background: linear-gradient(45deg, rgba(39, 218, 224, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    /* height: 200vh; */
+}
+
+.contHeader {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+}
+
+.contText {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.contText p {
+
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+}
+
+.contText p.bold {
+    font-weight: 600;
+}
+
+.contText hr {
+    width: 50px;
+    height: 10px;
+    background-color: rgb(65, 178, 223);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(7, 191, 204, 0.5);
+    transition: all 0.5s ease;
+}
+
+.contText:hover hr {
+    width: 150px;
+}
+
+.contText:hover p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.contContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.contCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgba(39, 218, 224, 0.5) 0%, rgba(255, 255, 255, 0.2) 100%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    transform: translateX(0px), translateY(0px);
+}
+
+.contCard:hover {
+    transform: translateX(10px) translateY(10px);
+    background: linear-gradient(0deg, rgba(39, 218, 224, 0.5) 0%, rgba(255, 255, 255, 0.2) 100%);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease;
+}
+
+/* Keyframes for animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.visible {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+.contRest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+}
+.part1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 10px;
+    height: 100%;
+}
+.contItem1 , .contItem2{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* width: 50%; */
+    height: 100%;
+    padding: 10px;
+}
+.contItem1{
+    flex: 1.2;
+    flex-wrap: wrap ;
+    justify-content: start;
+    padding: 30px;
+}
+.contItem1 h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+}
+.contItem1 h4{
+    margin: 30px 0;
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+}
+.contItem1 p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 70%;
+    text-wrap: wrap;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+}
+.contItem1 hr{
+    width: 50px;
+    height: 10px;
+    background-color: rgb(65, 178, 223);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(7, 191, 204, 0.5);
+    transition: all 0.5s ease;
+}
+.contItem1:hover h1{
+    text-shadow: 2px 2px 10px rgba(144, 243, 243, 0.8);
+}
+.contItem1:hover hr {
+    width: 150px;
+}
+.contItem2{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: start;
+}
+.contImage{
+    /* margin-top: -80px; */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 450px;
+    aspect-ratio: 1;
+}
+.part2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 10px;
+    /* height: 100%; */
+}
+
+.contItem3{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    height: 100%;
+    padding: 10px;
+    gap: 20px;
+}
+.contItem3 h4{
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding:  20px 0;
+    font-weight: 500;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid rgb(65, 178, 223);
+}
+.contItem3Div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    width: 50%;
+    gap: 10px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease;
+}
+.contItem3Div p{
+    flex: 1;    
+}
+.contItem4{
+    margin-top: -40px;
+    flex: 1;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgb(255, 101, 45);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .contCard{
+        width: 80vw;
+    }
+    .contItem1 h1{
+        font-size: 3rem;
+        width: 100%;
+    }
+    .contItem1 h4{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .contItem1 p{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .contItem1 hr{
+        width: 150px;
+        height: 8px;
+    }
+    .contItem2{
+        align-items: center;
+        justify-content: center;
+    }
+    .contImage{
+        width: 300px;
+    }
+    .part2{
+        flex-direction: column-reverse;
+    }
+    .contItem3{
+        width: 80vw;
+        font-size: 1.5rem;
+    }
+    .contItem3 h4{
+        width: 90%;
+    }
+    .contItem3Div{
+        width: 90%;
+    }
+    .contItem4{
+        margin-top: 0px;
+        font-size: 2rem;
+    }
+}
